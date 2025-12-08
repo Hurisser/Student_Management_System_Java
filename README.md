@@ -1,80 +1,95 @@
 Student Automation System (Java GUI)
-A desktop-based Student Information System developed using Java and Swing (GUI). This project was designed to simulate a university automation environment where students and academicians have different access levels and functionalities.
+
+A desktop-based Student Information System developed using Java and Swing (GUI). 
+This project was designed to simulate a university automation environment where students and academicians have different access levels and functionalities.
 
 The project emphasizes Object-Oriented Programming (OOP) principles, specifically focusing on Inheritance, Abstraction, and Polymorphism to manage user roles and data.
 
+
 🚀 Features
+
 🔐 User Authentication
-Secure Login: Role-based login system for Students (Ogrenci) and Academicians (Akademisyen).
 
-Registration: New users can register via the GUI.
-
-Validation: Input validation for IDs and passwords using Try-Catch blocks to prevent crashes on invalid input (e.g., entering text into a numeric ID field).
+  - Secure Login: Role-based login system for Students (Ogrenci) and Academicians (Akademisyen).
+  
+  - Registration: New users can register via the GUI.
+  
+  - Validation: Input validation for IDs and passwords using Try-Catch blocks to prevent crashes on invalid input (e.g., entering text into a numeric ID field).
 
 🎓 Student Module
-View enrolled courses (Dersler).
 
-View grades and academic notes (NotGoruntuleme).
-
-Course selection interface (DersSecimi).
+  - View enrolled courses (Dersler).
+  
+  - View grades and academic notes (NotGoruntuleme).
+  
+  - Course selection interface (DersSecimi).
 
 👨‍🏫 Academician Module
-Student management system.
 
-Grade entry system (NotGirme).
-
-Access to student lists and details.
+  - Student management system.
+  
+  - Grade entry system (NotGirme).
+  
+  - Access to student lists and details.
+    
 
 🏗️ Technical Architecture & OOP Concepts
+
 This project demonstrates a strong understanding of Java OOP principles:
 
-Inheritance:
+1. Inheritance:
 
-The Giris class extends JFrame to inherit GUI properties.
+    - The Giris class extends JFrame to inherit GUI properties.
+    
+    - Ogrenci and Akademisyen classes inherit from a base Kullanici (User) class to avoid code duplication.
 
-Ogrenci and Akademisyen classes inherit from a base Kullanici (User) class to avoid code duplication.
+2. Abstraction:
 
-Abstraction:
+    - Abstract Classes: Utilized to define a template for common user behaviors and system operations, enforcing specific implementations in child classes.
+    
+    - Interfaces were used to standardize operations across different modules.
 
-Abstract Classes: Utilized to define a template for common user behaviors and system operations, enforcing specific implementations in child classes.
+3. Encapsulation:
 
-Interfaces were used to standardize operations across different modules.
+    - Sensitive data (like passwords and IDs) are declared as private and accessed via Getter/Setter methods to ensure data security.
 
-Encapsulation:
+4. Polymorphism:
 
-Sensitive data (like passwords and IDs) are declared as private and accessed via Getter/Setter methods to ensure data security.
+    - The login system dynamically handles different user types (Student vs. Academician) using a unified logic flow.
 
-Polymorphism:
+5. Data Structures:
 
-The login system dynamically handles different user types (Student vs. Academician) using a unified logic flow.
-
-Data Structures:
-
-HashMap is used for efficient data storage and retrieval (e.g., OgrenciListesi.ogrenciListesi.containsKey()), allowing for O(1) complexity in user lookups.
+    - HashMap is used for efficient data storage and retrieval (e.g., OgrenciListesi.ogrenciListesi.containsKey()), allowing for O(1) complexity in user lookups.
 
 🛠️ Technologies Used
-Language: Java (JDK 22)
 
-GUI Framework: Java Swing (JFrame, JPanel, JOptionPane)
+  - Language: Java (JDK 22)
+  
+  - GUI Framework: Java Swing (JFrame, JPanel, JOptionPane)
+  
+  - IDE: Eclipse
 
-IDE: Eclipse
+💻 How to Run 
 
-💻 How to Run
-Clone the repository:
+1.Clone the repository:
 
-Bash
+    Bash
+    
+    git clone https://github.com/Hurisser/Student_Automation_System.git
 
-git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
-Open in Eclipse:
+2.Open in Eclipse:
 
-Open Eclipse IDE.
+    Open Eclipse IDE.
+    
+    File -> Open Projects from File System.
+    
+    Select the cloned folder.
 
-File -> Open Projects from File System.
+3.Run:
 
-Select the cloned folder.
+    Navigate to src/Otomasyon/Giris.java.
+    
+    Right-click -> Run As -> Java Application.
+________________________________________
+Developed by Hurisser and Esma Hacıhasanoğlu.
 
-Run:
-
-Navigate to src/Otomasyon/Giris.java.
-
-Right-click -> Run As -> Java Application.
