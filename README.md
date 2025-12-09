@@ -91,5 +91,5 @@ This project demonstrates a strong understanding of Java OOP principles:
     
     Right-click -> Run As -> Java Application.
 ________________________________________
-Developed by Hurisser and Esma Hacıhasanoğlu.
+Developed by Hurisser and Esma Hacıhasanoğlu https://github.com/HACIHASANOGLU.
 
